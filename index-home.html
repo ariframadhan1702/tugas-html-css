@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page Website Arif Ramadhan</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@100;200&family=Roboto:wght@400;500;700;900&display=swap'); 
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500&family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,200;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,700;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500&family=Raleway:ital,wght@0,100;0,200;0,300;0,600;0,700;0,800;0,900;1,200;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,700;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,700;1,900&display=swap');
+    
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+
+    .layer {
+        background-color: #FF9C1A;
+        margin: 40px;
+    }
+
+    .landing-page {
+        width: 1440px;
+        height: 1024px;
+        background: #F2F5F9;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        
+    }
+
+    .header {
+        display: flex;
+        width: 1240px;
+        height: 104px;
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 0;
+        position: relative;
+        padding-top: 18px;
+
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .my-style {
+        color: #EC1B09;
+        font-family: Pacifico;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-left: 100px;
+    }
+
+    .portofolio-style {
+        color: #FF9C1A;
+        font-family: Pacifico;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .profile-detail {
+        width: 400px;
+        height: 852px;
+        flex-shrink: 0;
+        filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.00));
+        margin-top: 0%;
+        margin-left: 100px;
+        margin-bottom: 50px;
+    
+    }
+
+    .profile-card {
+        display: flex;
+        width: 400px;
+        height: 852px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        flex-shrink: 0;
+        background:#FFF ;
+        border-radius: 20px;
+
+    }
+
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: url(./beatrice.jpg), lightgray 50% / cover no-repeat;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 50px;
+        margin-bottom: 5px;
+    }
+
+    .name {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .name1 {
+        color: #0B0909;
+        font-family: Raleway;
+        font-size: 28.42px;
+        font-style:normal;
+        font-weight: 700;
+        line-height: 35.525px; /* 125% */
+    }
+
+    .social-media-icons {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 9.095px;
+        list-style: none;
+    }
+
+    .career-details {
+        color: rgba(11, 9, 9, 0.50);
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px; /* 250% */ 
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .facebook {
+        display: flex;
+        padding: 19.071px 24.806px;
+        justify-content: center;
+        align-items: center;
+        gap: 8.269px;
+        border-radius: 8.269px;
+        background: #F2F7FC;
+        margin-bottom: 20px;
+        
+    }
+
+    .linkedin {
+        display: flex;
+        padding: 20.671px 24.806px;
+        align-items: flex-start;
+        gap: 8.269px;
+        border-radius: 8.269px;
+        background: #F2F7FC;
+    }
+
+    .twitter {
+        display: flex;
+        padding: 20.671px 24.806px;
+        align-items: flex-start;
+        gap: 8.269px;
+        border-radius: 8.269px;
+        background: #F2F7FC;
+    }
+
+    .github {
+        display: flex;
+        padding: 20.671px 24.806px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8.269px;
+        border-radius: 8.269px;
+        background: #F2F7FC;
+    }
+
+    .contact-card {
+        width: 350px;
+        height: 350px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: #F2F5F9;
+        display: flex ;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: normal;
+        
+    }
+
+
+    .mobile-icon {
+        display: flex;
+        padding: 2px 6px;
+        align-items:flex-start;
+        gap: 10px;
+        background: #F2F7FC;
+        justify-content: flex-start;
+        margin-left: 55px;
+    }
+
+    .button { 
+        display: inline-flex;
+        padding: 10px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border-radius: 20px;
+        background: #FF9C1B;
+        height: 44px;
+        width: 185px;
+        margin-left: 70px;
+        flex-direction: row;
+        border: 0cm;
+    }
+
+
+    .phone {
+        width: 12px;
+        height: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: auto;
+    }
+        
+    .huruf-icon {
+        color: rgba(26, 16, 3, 0.50);
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 0px; /* 0% */
+        display: flex;
+        padding: 5px 0px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .huruf-icon-bawah {
+        color: #000;
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 142.857% */
+    }
+
+    .line {
+        width: 256px;
+        height: 1px;
+        background: #E3E3E3;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 35px;
+    }
+
+    .download-resume {
+        color: #F2F7FC;
+        font-family: Raleway;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 166.667% */
+    }
+
+    .container {
+        height: 852px;
+        width: 820px;
+
+    }
+    .navbar { 
+        width: 503px;
+        height: 100px;
+        border-radius: 20px;
+        display: flex;
+        background: #F2F7FC;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+        margin-top: 42px;
+        margin-left: 250px;
+    }
+    .nav-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-card-2 { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-left: 93px;
+    }
+
+    .home-card {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        background: #FF9C1B;
+    }
+
+    .resume-card {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        background: #E1E8EF;
+    }
+
+    
+    .contact-card-2 {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        background: #E1E8EF;
+    }
+
+    .home-img {
+        display: flex;
+        padding-top:  18px;
+        padding-left: 27px;
+        padding-right: 27px;
+        justify-content: center;
+        align-items: center;
+    }
+    .resume-img {
+        display: flex;
+        padding-top:  18px;
+        padding-left: 27px;
+        padding-right: 27px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-img {
+        display: flex;
+        padding-top:  18px;
+        padding-left: 28px;
+        padding-right: 27px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-word {
+        color: #FFF;
+        font-family: Raleway;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 166.667% */
+        justify-content: center;
+        align-items: center;
+        padding-left: 23px;
+    }
+
+    .resume-word {
+        color: #000;
+        font-family: Raleway;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 166.667% */
+        padding-left: 18px;
+    }
+
+    .contact-word {
+        color: #000;
+        font-family: Raleway;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 166.667% */
+        padding-left: 17px;
+    }
+
+    .about-me-card {
+        
+        width: 820px;
+        height: 700px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 10px;
+
+        
+    }
+
+    .about-me-heading {
+        display: inline-flex;
+        align-items: center;
+        padding-left: 73px;
+        
+    }
+
+    .frame-3 {
+        display: flex;
+        width: 212px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .about-me-heading-2 {
+        color: #0B0909;
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px; /* 100% */
+        letter-spacing: 1px;
+        padding-top: 28px;
+    }
+    
+    .line-aboutme {
+        width: 252px;
+        height: 2px;
+        stroke-width: 2px;
+        stroke: #FE9119;
+    }
+
+    .about-me-details {
+        width: 674px;
+        height: 120px;
+        color: #000;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 187.5% */
+        padding-left: 80px;
+        
+        
+    }
+
+    .about-subheading {
+        display: inline-flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .about-subheading-2 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px; /* 125% */
+        letter-spacing: 0.8px;
+        padding-left: 73px;
+    }
+
+    .flex-container {
+        width: 333px;
+        height: 169px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 27px;
+        padding-left: 73px;
+    }
+    
+    .flex-container-1-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+    }
+    
+    .flex-container-1-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+
+    .flex-row-1 {
+        width: 333;
+        height: 169;
+        border: 1px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        gap: 27px;
+        list-style: none;
+    }
+
+    .flex-row-2 {
+        width: 333;
+        height: 169;
+        border: 1px;
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F7FC;
+        border-radius: 20px;
+    }
+
+    .flex-row-3 {
+        width: 333;
+        height: 169;
+        border: 1px;
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F7FC;
+        border-radius: 20px;
+    }
+
+    .flex-row-4 {
+        width: 333;
+        height: 169;
+        border: 1px;
+        display: flex;
+        flex-direction: column;
+        background: #FFEBD1;
+        border-radius: 20px;
+    }
+
+    .webdev-detail {
+        display: inline-flex;
+        flex-direction: column;
+        border-radius: 20px;
+        background: #FFEBD1;
+        width: 333px;
+        height: 169px;
+        
+        
+    }
+    .webdev-detail-1 {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        left: 15px;
+        top: 2px;
+    }
+    .webdev-heading {
+        height: auto;
+        width: auto;
+        display: flex;
+        align-items: left;
+        gap: 10px;
+        /* margin-left: 13px; */
+        color: #000;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 83.333% */
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    
+
+    .app-detail {
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        background:#F2F7FC;
+        width: 333px;
+        height: 169px;
+        margin-top: 2px;
+        
+
+    }
+
+
+    .app-heading {
+        height: auto;
+        width: auto;
+        display: flex;
+        align-items: left;
+        gap: 10px;
+        /* margin-left: 13px; */
+        color: #000;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 83.333% */
+        margin-top: 10px;
+        margin-left: 20px;
+
+    }
+    .ui-ux-detail {
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        background:#F2F7FC;
+        width: 333px;
+        height: 169px;
+        margin-top: 2px;
+        
+        
+    }
+
+    
+    .ui-ux-heading {
+        height: auto;
+        width: auto;
+        display: flex;
+        align-items: left;
+        gap: 10px;
+        /* margin-left: 13px; */
+        color: #000;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 83.333% */
+        margin-top: 30px;
+        margin-left: 20px;
+
+    }
+
+    .mentorship-detail {
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        background: #FFEBD1;
+        width: 333px;
+        height: 169px;
+        margin-top: 2px;
+
+
+    }
+
+    
+    .mentorship-heading {
+        height: auto;
+        width: auto;
+        display: flex;
+        align-items: left;
+        gap: 10px;
+        /* margin-left: 13px; */
+        color: #000;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 83.333% */
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+
+    .webdev-paragraf {
+        color: #000;
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 0.35px;
+        padding-top: 5px;
+        padding-right: 25px;
+        /* padding-bottom: 5px; */
+        padding-left: 25px;
+
+    }
+    .app-paragraf {
+        color: #000;
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 0.35px;
+        padding-top: 5px;
+        padding-right: 25px;
+        /* padding-bottom: 5px; */
+        padding-left: 25px;
+
+    }
+    .ui-ux-paragraf {
+        color: #000;
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 0.35px;
+        padding-top: 5px;
+        padding-right: 25px;
+        padding-bottom: 5px;
+        padding-left: 25px;
+
+    }
+    .mentorship-paragraf {
+        color: #000;
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 0.35px;
+        padding-top: 5px;
+        padding-right: 25px;
+        /* padding-bottom: 5px; */
+        padding-left: 25px;
+
+    }
+
+    
+</style>
+<!-- layer -->
+<body class="layer">
+<div class="landing-page">
+    <!-- header MyPortofolio -->    
+<div class="header">
+    <h1><span class="my-style">My</span><span class="portofolio-style">Portofolio</span></h1>
+</div>
+<div class="container">
+<!-- profile card -->
+    <div class="profile-detail"><div class="profile-card">
+        <img src ="./beatrice.jpg" class="profile-picture"alt="not found" width="200px" height="200px" flex-shrink="0">
+        <div class="name"><H1 class="name1">Arif Ramadhan</H1></div>
+        <div class="career-details">FullStack Developer</div>
+        <!-- link social media -->
+        <ul class="social-media-icons">
+            <li><a href="www.facebook.com"><img class="facebook" src="fb_icon.svg" alt=""></a></li>
+            <li><a href="www.linkedin.com"><img class="linkedin" src="linkedin_icon.svg" alt=""></a></li>
+            <li><a href="twitter.com"><img class="twitter" src="twitter_icon.svg" alt=""></a></li>
+            <li><a href="github.com"><img class="github" src="github_icon.svg" alt=""></a></li>
+        </ul>
+        <!-- kontak dan alamat -->
+        <div class="contact-card">
+            <div></div>
+            <div class="phone"><img src="mobile_icon.svg" class="mobile-icon"><div><p class="huruf-icon">Phone</p><p class="huruf-icon-bawah">+6287883745801</p></div></div>
+            <div class="line"></div>
+            <div class="phone"><img src="email_icon.svg" class="mobile-icon"><div><p class="huruf-icon">Email</p><p class="huruf-icon-bawah">ariframadhan1702@gmail.com</p></div></div>
+            <div class="line"></div>
+            <div class="phone"><img src="location_icon.svg" class="mobile-icon"><div><p class="huruf-icon">Location</p><p class="huruf-icon-bawah">Cipayung,Jakarta</p></div></div>
+            <div class="line"></div>
+            <button class="button"><a href="./resume_arif.pdf"><img src="download-icon.svg" alt=""></a><p class="download-resume">Download Resume</p></button>
+            <div></div>
+        </div>
+        </div>
+    </div>
+    <div class="main">
+<!-- navigation bar -->
+        <div class="container-2">
+            <div class="navbar">
+                <div class="nav-card">
+                <div class="nav-card-2">
+                    <div class="home-card"><a href="./index-home.html"><img src="home_icon.svg" class="home-img" alt=""></a><p class="home-word">Home</p></div>
+                    <div class="resume-card"><a href="./index-resume.html"><img src="resume_icon.svg" class="resume-img" alt=""></a><p class="resume-word">Resume</p></div>
+                    <div class="contact-card-2"><a href="./index-contact.html"><img src="contact_icon.svg" class="contact-img" alt=""></a><p class="contact-word">Contact</p></div>
+                </div>
+                </div>
+            </div>
+        </div>
+<!-- aboutme card -->
+        <div class="about-me-card">
+            <div class="about-me-heading">
+                <div class="frame-3">
+                    <H1 class="about-me-heading-2">ABOUT ME</H1>
+                </div>
+                <img src="line-aboutme.svg" class="line-aboutme" alt="">
+            </div>
+            <div>
+            <p class="about-me-details">
+                Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile full-stack developer with a keen interest in exploring the latest cutting-edge technologies. My journey in the world of web development has been nothing short of exhilarating, and I constantly strive to enhance my skills and embrace emerging trends in the industry.
+            </p>
+            </div>
+            <div class="about-subheading">
+                <H2 class="about-subheading-2">
+                what I do!
+                </H2>
+            </div>
+            <!-- keahlian (penjabaran what i do) -->
+            <div class="flex-container">
+                <div class="flex-container-1-1">
+                    
+                        <div class="flex-row-1">
+                            <div class="webdev-detail">
+                                <div class="webdev-heading"><img src="code_icon.svg" alt=""><h3>Web Development</h3></div>
+                                    <div class="wevdev-detail-1">
+                                        <div><p class="webdev-paragraf">As a developer, I find myself most captivated by the power and flexibility of NEXT.js. I'm always eager to dive into new projects that leverage NEXT.js and discover innovative ways to create fast, scalable, and user-friendly applications.</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    <div>
+                        <div class="flex-row-2">
+                            <div class="ui-ux-detail">
+                                <div class="ui-ux-detail-1">
+                                    <div class="ui-ux-heading"><img src="ux_icon.svg" alt=""><h3>UI/UX Desingning</h3></div>
+                                        <div class="ui-ux-paragraf">Crafting visually appealing and intuitive user interfaces that offer a delightful user experience is something I'm truly fanatic about.
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-container-1-2">
+                    <div>
+                        <div class="flex-row-3">
+                            <div class="app-detail">
+                                <div class="app-heading"><img src="app_icon.svg" alt=""><h3>App Development</h3></div>
+                                    <div class="app-detail-1">
+                                        <div class="app-paragraf"><p>With a focus on user-centric design and cutting-edge technologies, I thrive on building intuitive and efficient apps that make a positive impact on people's lives. Let's turn ideas into reality and shape the future together.</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div>
+                    <div class="flex-row-4">
+                        <div class="mentorship-detail">
+                            <div class="mentorship-heading"><img src="mentor_icon.svg" alt=""><h3>Mentorship</h3>
+                                </div>
+                                    <div class="mentorship-detail-1">
+                                        <div class="mentorship-paragraf "><p>I have also found great joy in sharing my knowledge with others. Being a technical mentor allows me to give back to the community that has supported me throughout my career.</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+            
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

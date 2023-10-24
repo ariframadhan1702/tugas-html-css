@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page Website Arif Ramadhan</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@100;200&family=Roboto:wght@400;500;700;900&display=swap'); 
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500&family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,200;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,700;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500&family=Raleway:ital,wght@0,100;0,200;0,300;0,600;0,700;0,800;0,900;1,200;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,700;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,700;1,900&display=swap');
+    
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+
+    .layer {
+        background-color: #FF9C1A;
+        margin: 40px;
+    }
+
+    .landing-page {
+        width: 1440px;
+        height: 1024px;
+        background: #F2F5F9;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        
+    }
+
+    .header {
+        display: flex;
+        width: 1240px;
+        height: 104px;
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 0;
+        position: relative;
+        padding-top: 18px;
+
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .my-style {
+        color: #EC1B09;
+        font-family: Pacifico;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-left: 100px;
+    }
+
+    .portofolio-style {
+        color: #FF9C1A;
+        font-family: Pacifico;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .profile-detail {
+        width: 400px;
+        height: 852px;
+        flex-shrink: 0;
+        filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.00));
+        margin-top: 0%;
+        margin-left: 100px;
+        margin-bottom: 50px;
+    
+    }
+
+    .profile-card {
+        display: flex;
+        width: 400px;
+        height: 852px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        flex-shrink: 0;
+        background:#FFF ;
+        border-radius: 20px;
+
+    }
+
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: url(./beatrice.jpg), lightgray 50% / cover no-repeat;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 50px;
+        margin-bottom: 5px;
+    }
+
+    .name {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .name1 {
+        color: #0B0909;
+        font-family: Raleway;
+        font-size: 28.42px;
+        font-style:normal;
+        font-weight: 700;
+        line-height: 35.525px; /* 125% */
+    }
+
+    .social-media-icons {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 9.095px;
+        list-style: none;
+    }
+
+    .career-details {
+        color: rgba(11, 9, 9, 0.50);
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px; /* 250% */ 
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .facebook {
+        display: flex;
+        padding: 19.071px 24.806px;
+        justify-content: center;
+        align-items: center;
+        gap: 8.269px;
+        border-radius: 8.269px;
+        background: #F2F7FC;
+        margin-bottom: 20px;
+        
+    }
+
+    .linkedin {
+        display: flex;
+        padding: 20.671px 24.806px;
+        align-items: flex-start;
+        gap: 8.269px;
+        border-radius: 8.269px;
+        background: #F2F7FC;
+    }
+
+    .twitter {
+        display: flex;
+        padding: 20.671px 24.806px;
+        align-items: flex-start;
+        gap: 8.269px;
+        border-radius: 8.269px;
+        background: #F2F7FC;
+    }
+
+    .github {
+        display: flex;
+        padding: 20.671px 24.806px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8.269px;
+        border-radius: 8.269px;
+        background: #F2F7FC;
+    }
+
+    .contact-card {
+        width: 350px;
+        height: 350px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: #F2F5F9;
+        display: flex ;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: normal;
+        
+    }
+
+
+    .mobile-icon {
+        display: flex;
+        padding: 2px 6px;
+        align-items:flex-start;
+        gap: 10px;
+        background: #F2F7FC;
+        justify-content: flex-start;
+        margin-left: 55px;
+    }
+
+    .button { 
+        display: inline-flex;
+        padding: 10px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border-radius: 20px;
+        background: #FF9C1B;
+        height: 44px;
+        width: 185px;
+        margin-left: 70px;
+        flex-direction: row;
+        border: 0cm;
+    }
+
+
+    .phone {
+        width: 12px;
+        height: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: auto;
+    }
+        
+    .huruf-icon {
+        color: rgba(26, 16, 3, 0.50);
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 0px; /* 0% */
+        display: flex;
+        padding: 5px 0px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .huruf-icon-bawah {
+        color: #000;
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 142.857% */
+    }
+
+    .line {
+        width: 256px;
+        height: 1px;
+        background: #E3E3E3;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 35px;
+    }
+
+    .download-resume {
+        color: #F2F7FC;
+        font-family: Raleway;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 166.667% */
+    }
+
+    .container {
+        height: 852px;
+        width: 820px;
+
+    }
+    .navbar { 
+        width: 503px;
+        height: 100px;
+        border-radius: 20px;
+        display: flex;
+        background: #F2F7FC;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+        margin-top: 42px;
+        margin-left: 250px;
+    }
+    .nav-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-card-2 { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-left: 93px;
+    }
+
+    .home-card {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        background: #E1E8EF;
+    }
+
+    .resume-card {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        background: #E1E8EF;
+    }
+
+    
+    .contact-card-2 {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        background: #FF9C1B;
+    }
+
+    .home-img {
+        display: flex;
+        padding-top:  18px;
+        padding-left: 27px;
+        padding-right: 27px;
+        justify-content: center;
+        align-items: center;
+    }
+    .resume-img {
+        display: flex;
+        padding-top:  18px;
+        padding-left: 27px;
+        padding-right: 27px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-img {
+        display: flex;
+        padding-top:  18px;
+        padding-left: 28px;
+        padding-right: 27px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-word {
+        color: #000;
+        font-family: Raleway;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 166.667% */
+        justify-content: center;
+        align-items: center;
+        padding-left: 23px;
+    }
+
+    .resume-word {
+        color: #000;
+        font-family: Raleway;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 166.667% */
+        padding-left: 18px;
+    }
+
+    .contact-word {
+        color: #FFF;
+        font-family: Raleway;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 166.667% */
+        padding-left: 18px;
+    }
+
+    .aboutme-card {
+        
+        width: 820px;
+        height: 700px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 10px;
+    }
+
+    .about-me-heading {
+        display: inline-flex;
+        align-items: center;
+        padding-left: 63px;
+        margin-top: 18px;
+        
+    }
+
+    .frame-3 {
+        display: flex;
+        width: 169px;
+        height: 60px;
+        padding: 10px;
+        justify-content:normal;
+        align-items: center;
+    }
+
+    .about-me-heading-2 {
+        color: #0B0909;
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px; /* 100% */
+        letter-spacing: 1px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .line-aboutme {
+        width: 252px;
+        height: 2px;
+        stroke-width: 2px;
+        stroke: #FE9119;
+    }
+
+    .about-me-details {
+        width: 674px;
+        height: 120px;
+        color: #000;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 187.5% */
+        padding-left: 80px;
+        
+        
+    }
+
+    .about-subheading {
+        display: inline-flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .about-subheading-2 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px; /* 125% */
+        letter-spacing: 0.8px;
+        padding-left: 73px;
+    }
+
+    .education-experience-heading {
+        gap: 160px;
+        width: 565px;
+        height: 47px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 55px;
+        margin-bottom: 10px;
+    }
+    .education-heading {
+        gap: 9.25px;
+        width: 183px;
+        height: 47px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .experience-heading {
+        gap: 9.25px;
+        width: 183px;
+        height: 47px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .edu-word {
+        color: #000;
+        font-family: Poppins;
+        font-size: 27.737px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 46.229px; /* 166.667% */
+        letter-spacing: 0.693px;
+        justify-content: center;
+    }
+
+    .experience-word {
+        color: #000;
+        font-family: Poppins;
+        font-size: 27.737px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 46.229px; /* 166.667% */
+        letter-spacing: 0.693px;
+        justify-content: center;
+    }
+
+    .edu-icon {
+        width: 28px;
+        height: 28px;
+        justify-content: center;
+        
+    }
+
+    .experience-icon {
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+    }
+
+
+
+
+    .flex-container {
+        width: 289px;
+        height: 150px;
+        display: flex;
+        align-items: flex-start;
+        padding-left: 73px;
+    }
+    
+    .flex-container-1-1 {
+        display: flex;
+        flex-direction: row;
+        gap: 27px;
+
+    }
+    
+
+
+    .flex-row-1 {
+        width: 333px;
+        height: 150px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: #FFEED9;
+
+    }
+
+    .flex-row-2 {
+        width: 333px;
+        height: 150px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: #F2F7FC;
+    }
+
+    .flex-row-1-1 {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        padding-left: 26px;
+        padding-top: 22px;
+        
+
+    }
+    .flex-row-2-1 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        padding-left: 14px;
+        padding-top: 18px;
+        
+    }
+
+    .phone-contact {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+    }
+
+    .phone-contact-word {
+        color: #000;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px; /* 250% */
+        letter-spacing: 0.4px;
+        height: 40px;
+        width: 58px;
+    }
+    
+    .phone-contact-number {
+        color: rgba(0, 0, 0, 0.85);
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px; /* 285.714% */
+        letter-spacing: 0.35px;
+        padding-left: 60px;
+        width: 117px;
+        height: 20px;
+    }
+
+    .email-contact {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        align-items: center;
+    }
+
+    .email-contact-word {
+        color: #000;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px; /* 250% */
+        letter-spacing: 0.4px;
+        height: 40px;
+        width: 50px;
+        
+    }
+    .email-contact-addres {
+        color: #000;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px; /* 285.714% */
+        letter-spacing: 0.35px;
+        padding-left: 48px;
+        
+        
+    }
+
+    .contact-form {
+        width: 694px;
+        height: 392px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: #F8FBFB;
+        display: inline-flex;
+        margin-left: 73px;
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .contact-description {
+        padding: 43px 76px 14px 39px;
+        
+    }
+
+    .normal {
+        color: #000;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 187.5% */
+        letter-spacing: 0.4px;
+    }
+
+    .bold {
+        color: #000;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.4px;
+
+    }
+    .line-contact {
+        width: 579.001px;
+        height: 2px;
+        opacity: 0.2;
+        background: #B5B5B5;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
+        gap: 19px;
+                
+
+    }
+    .name-contact-form {
+        color: #000;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 125% */
+        letter-spacing: 0.4px;
+        height: 39px;
+        width: 580px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 23px;
+        margin-left: 39px;
+    }
+    .email-contact-form {
+        color: #000;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 125% */
+        letter-spacing: 0.4px;
+        height: 39px;
+        width: 580px;
+        margin-left: 39px;
+        margin-bottom: 23px;
+    }
+    .message-contact-form {
+        color: #000;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 125% */
+        letter-spacing: 0.4px;
+        height: 39px;
+        width: 580px;
+        margin-left: 39px;
+        margin-bottom: 26px;
+
+    }
+
+    .submit {
+        color: #000;
+        font-family: Raleway;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 166.667% */
+        border-radius: 20px;
+        width: 101px;
+        height: 40px;
+        margin-left: 39px;
+    }
+
+
+
+
+    
+    
+
+    
+    
+
+
+    
+
+
+
+    
+</style>
+<!-- layer -->
+<body class="layer">
+<div class="landing-page">
+<!-- header MyPortofolio -->
+<div class="header">
+    <h1><span class="my-style">My</span><span class="portofolio-style">Portofolio</span></h1>
+</div>
+<div class="container">
+<!-- profile card -->
+    <div class="profile-detail"><div class="profile-card">
+        <img src ="./beatrice.jpg" class="profile-picture"alt="not found" width="200px" height="200px" flex-shrink="0">
+        <div class="name"><H1 class="name1">Arif Ramadhan</H1></div>
+        <div class="career-details">FullStack Developer</div>
+        <!-- link social media -->
+        <ul class="social-media-icons">
+            <li><a href="www.facebook.com"><img class="facebook" src="fb_icon.svg" alt=""></a></li>
+            <li><a href="www.linkedin.com"><img class="linkedin" src="linkedin_icon.svg" alt=""></a></li>
+            <li><a href="twitter.com"><img class="twitter" src="twitter_icon.svg" alt=""></a></li>
+            <li><a href="github.com"><img class="github" src="github_icon.svg" alt=""></a></li>
+        </ul>    
+        <!-- kontak dan alamat -->
+        <div class="contact-card">
+            <div></div>
+            <div class="phone"><img src="mobile_icon.svg" class="mobile-icon"><div><p class="huruf-icon">Phone</p><p class="huruf-icon-bawah">+6287883745801</p></div></div>
+            <div class="line"></div>
+            <div class="phone"><img src="email_icon.svg" class="mobile-icon"><div><p class="huruf-icon">Email</p><p class="huruf-icon-bawah">ariframadhan1702@gmail.com</p></div></div>
+            <div class="line"></div>
+            <div class="phone"><img src="location_icon.svg" class="mobile-icon"><div><p class="huruf-icon">Location</p><p class="huruf-icon-bawah">Cipayung,Jakarta</p></div></div>
+            <div class="line"></div>
+            <button class="button"><a href="./resume_arif.pdf"><img src="download-icon.svg" alt=""></a><p class="download-resume">Download Resume</p></button>
+            <div></div>
+        </div>
+        </div>
+    </div>
+    <div class="main">
+<!-- navigation bar -->
+        <div class="container-2">
+            <div class="navbar">
+                <div class="nav-card">
+                <div class="nav-card-2">
+                    <div class="home-card"><a href="./index-home.html"><img src="home-icon-black.svg" class="home-img" alt=""></a><p class="home-word">Home</p></div>
+                    <div class="resume-card"><a href="./index-resume.html"><img src="resume_icon.svg" class="resume-img" alt=""></a><p class="resume-word">Resume</p></div>
+                    <div class="contact-card-2"><a href="./index-contact.html"><img src="contact-icon-white.svg" class="contact-img" alt=""></a><p class="contact-word">Contact</p></div>
+                </div>
+                </div>
+            </div>
+        </div>
+<!-- Resume Card -->
+        <div class="aboutme-card">
+            
+            <div class="about-me-heading">
+                <div class="frame-3">
+                    <H1 class="about-me-heading-2">Contact</H1>
+                </div>
+                <img src="line-aboutme.svg" class="line-aboutme" alt="">
+            </div>
+            
+                <!-- Phone and Email -->
+            <div class="flex-container">
+                <div class="flex-container-1-1">
+                        <div class="flex-row-1">
+                            
+                                <div class="flex-row-1-1"><img src="phone-contact-page.svg" class="phone-contact" alt=""><p class="phone-contact-word">Phone</p></div>
+                                <p class="phone-contact-number">+254723909353</p>
+                                <p class="phone-contact-number">+254738509151</p>
+                            
+                            </div>
+                        <div class="flex-row-2">
+                            
+                                <div class="flex-row-2-1"><img src="email-contact-page.svg" class="email-contact" alt=""><p class="email-contact-word">Email:</p></div>
+                                <p class="email-contact-addres">ariframadhan1702@gmail.com</p>
+                            
+                        </div>
+                    </div>
+            </div>
+
+
+        
+        <div class="contact-form">
+            <div class="contact-description"><span class="normal">Iam always open to discusing</span><span class="bold"> new projects. opportunities in tech world, partnerships </span> <span class="normal">and more so</span><span class="bold">mentorship.</span></div>
+            <div class="name-contact-form"><p>Name:</p><p class="line-contact"></p></div>
+            <div class="email-contact-form"><p>Email:</p><p class="line-contact"></p></div>
+            <div class="message-contact-form"><p >Message:</p><p class="line-contact"></p></div>
+            <div><button class="submit">Submit</button></div>
+
+        </div>    
+        </div>
+        
+            <div>
+            </div>
+        </div>   
+
+        
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
